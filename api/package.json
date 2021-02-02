@@ -18,9 +18,12 @@
   "homepage": "https://github.com/sdepold/js-basics-tdd#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.0.1"
+    "mocha": "^7.0.1",
+    "nock": "^13.0.7",
+    "sinon": "^9.2.4",
+    "supertest": "^6.1.3"
   },
   "dependencies": {
-    "node-fetch": "^2.6.1"
+    "express": "^4.17.1"
   }
 }

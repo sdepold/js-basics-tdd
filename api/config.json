@@ -1,0 +1,7 @@
+{
+  "fizzbuzz": {
+      "protocol": "http",
+      "host": "peaceful-coast-8233.herokuapp.com",
+      "path": "/output.json"
+  }
+}
