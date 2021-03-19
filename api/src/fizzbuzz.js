@@ -1,9 +1,12 @@
 const fetch = require("node-fetch");
 const { fizzbuzz } = require("../config.json");
-const fizzBuzzUrl = `${fizzbuzz.protocol}://${fizzbuzz.host}${fizzbuzz.path}`;
 
 module.exports = {
   get(n) {
-    return fetch(`${fizzBuzzUrl}?amount=${n}`).then((res) => res.json());
+    return fetch(`${fizzbuzz.host}${fizzbuzz.basePath}?amount=${n}`).then((res) => res.json());
   },
+
+  getNumbers(n) {
+    return this.get(n).then(result => result.filter(Number));
+  }
 };
