@@ -1,5 +1,7 @@
 const fizzbuzzModel = require("../src/fizzbuzz");
 const { expect } = require("chai");
+const nock = require("nock");
+const config = require("../config");
 
 const fizzbuzz21 = [
   "1",

@@ -2,7 +2,7 @@ const sinon = require("sinon");
 const request = require("supertest");
 
 const app = require("../src/server")();
-const model = require("../src/fizzbuzz");
+const fizzbuzz = require("../src/fizzbuzz");
 
 describe("API", () => {
   describe("GET /", () => {
