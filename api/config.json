@@ -1,6 +1,0 @@
-{
-  "fizzbuzz": {
-    "host": "http://peaceful-coast-8233.herokuapp.com", 
-    "basePath": "/output.json"
-  }
-}
